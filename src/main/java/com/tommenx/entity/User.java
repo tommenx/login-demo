@@ -3,100 +3,62 @@ package com.tommenx.entity;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    private String name;    //名字
-    private String sex; //性别
-    private String loginId; //登陆ID
-    private String pwd;    //密码
-    private String duty;    //职务
-    private int age;    //年龄
-    private String cellNumber;  //手机号
-    private String photoUrl;    //头像地址
-    private boolean used = true;   //是否可用,默认值是true
+    private int id;
+    private String phone;
+    private String username;
+    private String password;
 
-    public boolean isUsed() {
-        return used;
+
+    public User() {
     }
 
-    public void setUsed(boolean used) {
-        this.used = used;
+
+    public User(int id, String phone, String username, String password) {
+        this.id = id;
+        this.phone = phone;
+        this.username = username;
+        this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getSex() {
-        return sex;
+    public String getPhone() {
+        return phone;
     }
 
-    public String getPwd() {
-        return pwd;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public String getPassword() {
+        return password;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public String getUsername() {
+        return username;
     }
 
-    public String getLoginId() {
-        return loginId;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public void setLoginId(String loginId) {
-        this.loginId = loginId;
-    }
-
-    public String getDuty() {
-        return duty;
-    }
-
-    public void setDuty(String duty) {
-        this.duty = duty;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getCellNumber() {
-        return cellNumber;
-    }
-
-    public void setCellNumber(String cellNumber) {
-        this.cellNumber = cellNumber;
-    }
-
-    public String getPhotoUrl() {
-        return photoUrl;
-    }
-
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", loginId='" + loginId + '\'' +
-                ", pwd='" + pwd + '\'' +
-                ", duty='" + duty + '\'' +
-                ", age=" + age +
-                ", cellNumber='" + cellNumber + '\'' +
-                ", photoUrl='" + photoUrl + '\'' +
-                ", used=" + used +
+                "id='" + id + '\'' +
+                "phone='" + phone + '\'' +
+                "name='" + username + '\'' +
+                ", pwd='" + password + '\'' +
                 '}';
     }
 }

@@ -9,6 +9,7 @@
     <mvc:resources mapping="/css/**" location="/static/css/" />
     <mvc:resources mapping="/images/**" location="/static/images/" />
     <mvc:resources mapping="/view/**" location="/static/view/" />
+    <mvc:resources mapping="/javascripts/**" location="/static/javascripts/"/>
     <mvc:default-servlet-handler/>
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
