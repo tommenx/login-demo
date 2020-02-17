@@ -27,4 +27,9 @@ public class MainController {
         ModelAndView mdv = new ModelAndView("login");
         return mdv;
     }
+    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    public ModelAndView index() {
+        ModelAndView mdv  = new ModelAndView("index");
+        return mdv;
+    }
 }

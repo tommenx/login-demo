@@ -12,9 +12,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
     <title>登录</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
 <div class="container container-small">
     <div class="alert alert-danger" role="alert">密码错误</div>
     <h1>登录
-        <small>没有账号？<a href="/register">注册</a></small>
+        <small>没有账号？<a href="/login/register">注册</a></small>
     </h1>
     <form id="loginInfo">
         <div class="form-group">
@@ -58,7 +58,7 @@
         var params = $('#loginInfo').serializeArray();
         $.ajax({
             type:'POST',
-            url:'/user/login',
+            url:'user/login',
             dataType:'json',
             data:{
                 phone:params[0].value,
@@ -72,7 +72,7 @@
                     $('.alert').text('密码错误');
                     $('.alert').show();
                 }else if (res.code == 1){
-                    window.location.href = "/";
+                    window.location.href = "index";
                 }
             }
         })

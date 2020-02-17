@@ -26,5 +26,4 @@ public class UserService {
     public User findUser(User user) {
         return userDao.selectByPhone(user.getPhone());
     }
-
 }

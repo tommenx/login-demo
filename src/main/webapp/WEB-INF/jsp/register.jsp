@@ -12,9 +12,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
     <title>注册</title>
 </head>
 <body>
@@ -79,7 +79,7 @@
         else{
             $.ajax({
                 type:'POST',
-                url:'/user/register',
+                url:'user/register',
                 data:{
                     phone:params[0].value,
                     username:params[1].value,
@@ -90,7 +90,7 @@
                     if(data.code == 0){
                         $('.alert').show();
                     }else {
-                        window.location.href = "/login";
+                        window.location.href = "login";
                     }
                 }
             })
