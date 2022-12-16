@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
-        <org.springframework.version>4.3.2.RELEASE</org.springframework.version>
+        <org.springframework.version>5.2.20.RELEASE</org.springframework.version>
         <com.alibaba.druid.version>1.0.25</com.alibaba.druid.version>
         <com.mybatis.mybatis.version>3.4.1</com.mybatis.mybatis.version>
         <com.mybatis.mybatis_spring.version>1.3.0</com.mybatis.mybatis_spring.version>
